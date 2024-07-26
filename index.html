@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Python Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+        <span id="python-doc">Python Documentation</span>
+        <img src="python_logo.jpg" alt="Python Logo" id="python-logo">
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+      <li><a class="nav-link" href="#Python_vs_other_languages">Python vs Other Languages</a></li>
+      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+      <li><a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a></li>
+      <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+      <li><a class="nav-link" href="#Lists">Lists</a></li>
+      <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
+      <li><a class="nav-link" href="#Loops">Loops</a></li>
+      <li><a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a></li>
+      <li><a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+          Python is a high-level, interpreted programming language known for its simplicity and readability.
+        </p>
+        <p>
+          It was created by Guido van Rossum and first released in 1991. Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
+        </p>
+        <p>
+          Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+      <article>
+        <p>This guide assumes you have the following basic background:</p>
+        <ul>
+          <li>A general understanding of programming concepts.</li>
+          <li>Familiarity with any programming language.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Python_vs_other_languages">
+      <header>Python vs Other Languages</header>
+      <article>
+        <p>
+          Python shares some similarities with other programming languages but also has its unique features:
+        </p>
+        <ul>
+          <li>Python is dynamically typed, unlike statically typed languages such as Java.</li>
+          <li>Its syntax is concise and readable, similar to languages like Ruby and JavaScript.</li>
+          <li>Python's object-oriented features resemble those of languages like Java and C++.</li>
+          <li>It supports functional programming constructs similar to those in languages like Lisp and Haskell.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+        <p>To print "Hello, World!" in Python, use the following code:</p>
+        <code>print("Hello, World!")</code>
+      </article>
+    </section>
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <article>
+        <p>Python supports various data types including:</p>
+        <ul>
+          <li>int</li>
+          <li>float</li>
+          <li>str</li>
+          <li>list</li>
+          <li>tuple</li>
+          <li>dict</li>
+          <li>bool</li>
+        </ul>
+        <p>Variables in Python do not need explicit declaration to reserve memory space. The declaration happens automatically when a value is assigned to a variable.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <article>
+        <p>Python provides various control flow statements including:</p>
+        <ul>
+          <li>if...else</li>
+          <li>while</li>
+          <li>for</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <article>
+        <p>Functions in Python are defined using the def keyword. They can have optional parameters and return values.</p>
+        <p>Example:</p>
+        <code>def greet(name):<br>    print("Hello, " + name)</code>
+      </article>
+    </section>
+    <section class="main-section" id="Lists">
+      <header>Lists</header>
+      <article>
+        <p>A list in Python is a collection of items. It is ordered and mutable.</p>
+        <p>Example:</p>
+        <code>my_list = [1, 2, 3, "apple", "banana"]</code>
+      </article>
+    </section>
+    <section class="main-section" id="Dictionaries">
+      <header>Dictionaries</header>
+      <article>
+        <p>A dictionary in Python is an unordered collection of key-value pairs.</p>
+        <p>Example:</p>
+        <code>my_dict = {"name": "John", "age": 30}</code>
+      </article>
+    </section>
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <article>
+        <p>Python supports two types of loops: for loop and while loop.</p>
+        <p>Example:</p>
+        <code>for i in range(5):<br>    print(i)</code>
+      </article>
+    </section>
+    <section class="main-section" id="Modules_and_Packages">
+      <header>Modules and Packages</header>
+      <article>
+        <p>Python modules are files containing Python code. They can define functions, classes, and variables.</p>
+        <p>Packages are namespaces which contain multiple packages and modules themselves. They are simply directories containing a special __init__.py file.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Classes_and_Objects">
+      <header>Classes and Objects</header>
+      <article>
+        <p>Python is an object-oriented programming language. It supports classes and objects as first-class citizens.</p>
+        <p>Example:</p>
+        <code>class Dog:<br>    def __init__(self, name):<br>        self.name = name<br>    def bark(self):<br>        print(self.name + " says woof!")</code>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
